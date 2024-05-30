@@ -1,0 +1,607 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-align: justify;
+  }
+  body {
+    user-select: none;
+  }
+/*FIBONACCI*/
+  aside img{
+    max-height:100%;
+    display:block;
+  }
+  .introductio{
+    width:90%;
+    margin:auto;
+    padding: 5px;
+      display: flex;
+    flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .introductio img{
+    width: 30%;
+    padding: 5px;
+    display: block;
+  border:2px solid gold;
+  border-radius: 10px;
+  background-color:black;
+  }.vita{
+    width:95%;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+  }
+  .vita h2{
+    font-size: 2.5em;
+  }
+  .vita p{
+    padding: 10px;
+  }
+  .sequence{
+    width:95%;
+    margin:auto;
+    display: flex;
+    flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    padding:10px;
+  }
+  .sequence p{
+    padding: 10px;
+  }
+  .sequence section{
+    width:95%;
+    margin:auto;
+    
+    text-align:justify;
+    padding:10px;
+  }
+  .sequence aside img{
+    width:100%;
+    padding:5px;
+    background-color:black;
+    border: 2px solid gold;
+    border-radius: 5%;
+    text-align:right;
+  }
+  .aurea {
+    width:95%;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aurea p{
+    padding: 10px;;
+  }
+  .aurea section {
+    width:95%;
+    margin:auto;
+    
+    text-align:justify;
+    padding:10px;
+  }
+  .aurea aside img{
+    width:100%;
+    padding:5px;
+    background-color:black;
+    border: 2px solid gold;
+    border-radius: 5%;
+  }
+  .sequence aside {
+    text-align: right;
+  }
+  .aurea aside {
+    text-align: right;
+  }
+  .content{
+    color:white;
+    padding:20px;
+    font-size:1em;
+    border-radius:10px;
+    text-align: justify;
+    background-color: rgba(0,0,0, 0.8);
+  }
+  section{
+    min-width:60%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  h2{
+    font-size: 2em;
+    border-radius: 50%;
+    padding:20px;
+    display:inline-block;
+    color:white;
+    text-align: center;
+  }
+/*FINE FIBONACCI*/
+
+/*MENU*/
+  nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1;
+    background-color: rgba(1,0,41);
+  }
+  nav .logo{
+    width: 80px;
+  }
+  .menu{
+    display:flex;
+  }
+  .menu li{
+    padding-left:30px;
+  }
+  .nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: transparent;
+    padding: 12px 20px;
+  }
+  .menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+  }
+    
+  .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.15s ease-in-out;
+  }
+  .menu li a:hover:after {width: 100%;}
+  .open-menu , .close-menu {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+  }
+  .open-menu {
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+  .close-menu {
+    top: 15px;
+    left: 25px;
+    position: absolute ;
+  }
+  #check {display: none;}
+
+  /*FINE MENU*/
+  /*INDEX + GENERALI*/
+  .sfondo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -1;
+  }
+    
+  .titolo h1{
+    font-size: 10em;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  .titolo{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titolo h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    
+  }
+  footer{
+    position:fixed;
+    display:block;
+    bottom: 0;
+    text-align:center;
+    color: #fff;
+    width:100%;
+    background-color: rgba(1,0,41,0.9);
+  }
+  
+  #slider {
+    position: relative;
+    width: 50%;
+    height: 30vw;
+    margin: 7% auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+  
+  input[type=radio] {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 60%;
+    width: 18px;
+    height: 15px;
+    margin: 0 15px 0 0;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  .click{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+  }
+  
+  input[type=radio]:checked {
+    opacity: 1;
+  }
+  
+  #slider label {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    transition: transform 400ms ease;
+  }
+  #slide1 {
+    background-image: url("./img/index/fibo-index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #slide2 {
+    background: url("./img/index/kobe-index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  #slide3 {
+    background: url("./img/index/steve-index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  #slide4 {
+    background: url("./img/index/giovanna-index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  #slide5 {
+    background: url("./img/index/faggin-index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* FUNZIONALITA' SLIDE */
+  
+  /* SLIDE ATTUALE */
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+  }
+  
+  /* SLIDE SUCCESSIVA */
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(15%, 0, -100px);
+  }
+  
+  
+  /* SLIDE SUCCESSIVA SUCESSIVA*/
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(30%, 0, -250px);
+  }
+  
+  /* SLIDE PRECEDENTE PRECEDENTE */
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(-30%, 0, -250px);
+  }
+  
+  /* SLIDE PRECEDENTE */
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-15%, 0, -100px);
+  }
+
+  .content img{
+    width: 20vw;
+  }
+  /*FINE INDEX*/
+
+  /*KOBE*/
+  .kobe{
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+  }
+  .introductiok{
+    width:95%;
+    margin:auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .intro{
+    width: 60%;
+    padding: 5px;
+    display: block;
+    margin:auto;
+	  border: 1px solid red;
+	  border-radius:10px;
+	  background-color:black;
+  }
+  .introductiok p{
+    text-align: justify;
+    font-size:0.8em;
+    padding:5px;
+  }
+  .continuo{
+    width:95%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+  }
+  .continuo p{
+    padding:10px 0px;
+    font-size:0.9em;
+  }
+  .continuo section{
+    width:95%;
+    margin:auto;
+    text-align:justify;
+    padding:15px;
+  }
+  .continuo aside img{
+    width:100%;
+    padding:5px;
+    background-color:black;
+    text-align:right;
+    border: 1px solid red;
+    border-radius:10px;
+  }
+  .fine {
+    width:95%;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fine section {
+    width:95%;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+  }
+  .fine section p{
+    font-size:0.9em;
+    padding: 10px 0px;
+  }
+  .fine aside img{
+    width:100%;
+    padding:5px;
+    background-color:black;
+    border: 1px solid red;
+    border-radius:10px;
+  }
+  .fine aside {
+    text-align: right;
+  }
+  /*FINE KOBE*/
+  
+@media only screen and (max-width: 1100px){
+  
+	.titolo h1{
+		font-size: 6em;
+	}
+	.titolo{
+		width:auto;
+	}
+  /*FIBONACCI*/
+  .introductio{
+		width:95%;
+		display:flex;
+		padding:5px;
+		flex-flow: column;
+		text-align:justify;
+	}
+	h1{
+		font-size:1em;
+	}
+	.introductio img{
+		width:70%;
+	}
+	h2{
+		text-align:center;
+		display: block;
+	}
+	p{
+		padding:10px;
+	}
+	.sequence{
+		display:flex;
+		flex-direction:column;
+	}
+	.sequence aside{
+		width: 70%;
+		text-align:center;
+	}
+	.aurea{
+		display:flex;
+		flex-direction:column;
+	}
+	.aurea aside{
+		width: 60%;
+		margin:auto;
+	}
+	.sfondo video{
+		width:90%;
+		height:1000%;
+		margin:auto;
+	}
+  /*FINE FIBONACCI*/
+  /*KOBE*/
+  .introductiok{
+		width:95%;
+		display:flex;
+		padding:5px;
+		flex-flow: column;
+		text-align:justify;
+	}
+	.intro{
+		width:70%;
+	}
+	.continuo{
+		display:flex;
+		flex-direction:column;
+	}
+	.continuo aside{
+		width: 70%;
+		text-align:center;
+	}
+	.fine{
+		display:flex;
+		flex-direction:column;
+	}
+	.fine aside{
+		width: 60%;
+		margin:auto;
+	}
+  /*FINE KOBE*/
+}
+
+@media only screen and (max-width:700px){
+  /*MENU*/
+	.menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 85vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(1,0,41,0.9);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .logo{
+    align-content: center;  
+  }
+  nav{
+    padding: 0 2%;
+  }
+  .open-menu{
+    position:absolute;
+  }
+  .nav-bar{
+    justify-content: center;
+  }
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {left:0;}
+  #check:checked ~ .open-menu{color: transparent;} 
+/* FINE MENU*/
+/*FIBONACCI*/
+	.introductio img{
+		width:100%;
+	}
+	.titolo h1{
+		font-size:4em;
+	}
+	.aurea aside{
+		width:80%;
+	}
+  .sequence section{
+    display: block;
+    height: 100%;
+  }
+  .aurea section{
+    display: block;
+    height: 100%;
+  }
+  /*FINE FIBONACCI*/
+  /*KOBE*/
+  .intro{
+		width:100%;
+	}
+	.continuo aside{
+		width:100%;
+	}
+	.fine aside{
+		width:100%;
+	}
+
+  .continuo section{
+    display: block;
+    height: 100%;
+  }
+  .fine section{
+    display: block;
+    height: 100%;
+  }
+  /*FINE KOBE*/
+}
