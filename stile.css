@@ -5,10 +5,21 @@
     font-family: 'Poppins',sans-serif;
     text-align: justify;
   }
+  .container{
+    background-color: rgba(0,0,0, 0.6);
+    background-size: cover;
+    height: auto;
+    padding-bottom: 5vh;
+  }
   body {
     user-select: none;
+    min-height: 0;
   }
-/*FIBONACCI*/
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+/*FIBONACCI - FAGGIN*/
   aside img{
     max-height:100%;
     display:block;
@@ -18,12 +29,12 @@
     margin:auto;
     padding: 5px;
       display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
       justify-content: space-around;
       align-items: center;
   }
   .introductio img{
-    width: 30%;
+    width: 70%;
     padding: 5px;
     display: block;
   border:2px solid gold;
@@ -45,9 +56,8 @@
     width:95%;
     margin:auto;
     display: flex;
-    flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
+    justify-content: space-between;
+    align-items: center;
     padding:10px;
   }
   .sequence p{
@@ -82,7 +92,7 @@
     padding: 10px;;
   }
   .aurea section {
-    width:95%;
+    width:100%;
     margin:auto;
     
     text-align:justify;
@@ -100,6 +110,7 @@
   }
   .aurea aside {
     text-align: right;
+    width:40%;
   }
   .content{
     color:white;
@@ -115,7 +126,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
   }
   h2{
     font-size: 2em;
@@ -125,7 +136,7 @@
     color:white;
     text-align: center;
   }
-/*FINE FIBONACCI*/
+/*FINE FIBONACCI - FAGGIN*/
 
 /*MENU*/
   nav{
@@ -205,11 +216,10 @@
   .sfondo{
     position: fixed;
     right: 0;
-    bottom: 0;
     min-width: 100%;
     min-height: 100%;
     transform: translateX(calc((100% - 100vw) / 2));
-    z-index: -1;
+    z-index: -100;
   }
     
   .titolo h1{
@@ -363,10 +373,6 @@
   /*FINE INDEX*/
 
   /*KOBE*/
-  .kobe{
-    width: 100%;
-    background-color: rgba(0,0,0, 0.4);
-  }
   .introductiok{
     width:95%;
     margin:auto;
@@ -448,8 +454,140 @@
     text-align: right;
   }
   /*FINE KOBE*/
+  /*JOBS*/
+  .j{
+    border: 2px solid lightseagreen !important;
+  }
+  .apple{
+    width:95%;
+    margin:auto;
+    display: flex;
+    flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+    padding:10px;
+  }
+  .apple p{
+    padding: 10px;
+  }
+  .apple section{
+    width:95%;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+  }
+  .apple aside img{
+    width:100%;
+    padding:5px;
+    background-color:black;
+    border-radius: 5%;
+    text-align:right;
+  }
+  .apple aside{
+    width:70%;
+  }
+  .altro {
+    width:95%;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .altro p{
+    padding: 10px;
+  }
+  .altro section {
+    width:95%;
+    margin:auto;
+    display:flex;
+    text-align:justify;
+    padding:10px;
+  }
+  .altro aside img{
+    width:100%;
+    padding:5px;
+    background-color:black;
+    border-radius: 5%;
+  }
+  .altro aside {
+    text-align: right;
+  }
+  .altro aside {
+    width: 70%;
+    text-align: right;
+  }
+  /*FINE JOBS*/
+  /*GIOVANNA*/
+  .introduzione{
+    width:85%;
+    margin:auto;
+    padding: 5px;
+      display: flex;
+    flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .introduzione img{
+      width: 70%;
+      padding: 5px;
+      display: block;
+    border: 2px solid green;
+    border-radius: 10%;
+    background-color:black;
+  }
   
-@media only screen and (max-width: 1100px){
+  .introduzione p{
+    text-align: center;
+    padding:10px;
+  }
+  
+  .vita{
+    width:90%;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+  }
+  .vita h2{
+    font-size: 2em;
+  }
+  .vita p{
+    padding: 10px;
+  }
+  .impatto{
+    width:95%;
+    margin:auto;
+    display: flex;
+    flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    padding:10px;
+  }
+  .impatto p{
+    padding: 10px;
+  }
+  .impatto section{
+    width:95%;
+    margin:auto;
+    
+    text-align:justify;
+    padding:10px;
+  }
+  .impatto aside img{
+    width:100%;
+    padding:5px;
+    background-color:black;
+    border: 2px solid green;
+    border-radius: 5%;
+    text-align:right;
+  }
+  
+  .impatto aside {
+    text-align: right;
+  }
+  /*FINE GIOVANNA*/
+@media only screen and (max-width: 1024px){
   
 	.titolo h1{
 		font-size: 6em;
@@ -457,7 +595,7 @@
 	.titolo{
 		width:auto;
 	}
-  /*FIBONACCI*/
+  /*FIBONACCI - FAGGIN*/
   .introductio{
 		width:95%;
 		display:flex;
@@ -499,7 +637,7 @@
 		height:1000%;
 		margin:auto;
 	}
-  /*FINE FIBONACCI*/
+  /*FINE FIBONACCI - FAGGIN*/
   /*KOBE*/
   .introductiok{
 		width:95%;
@@ -528,9 +666,48 @@
 		margin:auto;
 	}
   /*FINE KOBE*/
+  /*JOBS*/
+  .apple{
+		display:flex;
+		flex-direction:column;
+	}
+	.apple aside{
+		width: 70%;
+		text-align:center;
+	}
+	.altro{
+		display:flex;
+		flex-direction:column;
+	}
+	.altro aside{
+		width: 60%;
+		margin:auto;
+	}
+  /*FINE JOBS*/
+  
+  /*GIOVANNA*/
+  .introduzione{
+		width:95%;
+		display:flex;
+		padding:5px;
+		flex-flow: column;
+		text-align:justify;
+	}
+	.introduzione img{
+		width:50%;
+	}
+	.impatto{
+		display:flex;
+		flex-direction:column;
+	}
+	.impatto aside{
+		width: 70%;
+		text-align:center;
+	}
+  /*FINE GIOVANNA*/
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:768px){
   /*MENU*/
 	.menu {
     flex-direction: column;
@@ -565,7 +742,7 @@
   #check:checked ~ .menu {left:0;}
   #check:checked ~ .open-menu{color: transparent;} 
 /* FINE MENU*/
-/*FIBONACCI*/
+/*FIBONACCI - FAGGIN*/
 	.introductio img{
 		width:100%;
 	}
@@ -583,16 +760,16 @@
     display: block;
     height: 100%;
   }
-  /*FINE FIBONACCI*/
+  /*FINE FIBONACCI - FAGGIN*/
   /*KOBE*/
   .intro{
-		width:100%;
+		width:80%;
 	}
 	.continuo aside{
 		width:100%;
 	}
 	.fine aside{
-		width:100%;
+		width:80%;
 	}
 
   .continuo section{
@@ -604,4 +781,27 @@
     height: 100%;
   }
   /*FINE KOBE*/
+  /*JOBS*/
+	.altro aside{
+		width:80%;
+	}
+  .apple section{
+    display: block;
+    height: 100%;
+  }
+  .altro section{
+    display: block ;
+    height: 100%;
+  }
+  
+  /*FINE JOBS*/
+  /*GIOVANNA*/
+  .introduzione img{
+		width:100%;
+	}
+  .impatto section{
+    display: block ;
+    height: 100%;
+  }
+  /*FINE GIOVANNA*/
 }

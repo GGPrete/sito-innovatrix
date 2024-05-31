@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Steve Jobs</title>
-		<link rel="stylesheet" type="text/css" href="stileSteve.css">
+		<title>INNOVATRIX</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./stile.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
-			<header>
-				<h1>Steve Jobs</h1>
-			</header> 
-			<br>
-			<main>
-				<div class="introductio">
-					<img src="./img/10-Things-We-Can-Learn-From-the-Incredible-Steve-Jobs.jpg">
-					<p>Steve Jobs, born in San Francisco, was one of the greatest entrepreneurs of all time. He founded Apple in April 1976, and by 1980, Apple went public, reaching a valuation of $256 million, thus creating the first Apple computers in history. Additionally, in 1986, he acquired Pixar Animation Studios, becoming the founder and CEO of the film production company. Jobs had a marketing idea based on several points: a focus on customer experience, simplicity and clarity, continuous innovation, creating emotional connections. These principles allowed him to win over customers and people, enabling him to sell his products. If Steve succeeded in reaching where he did, it was because he had an incredible mindset based on principles such as pursuing passion, always making a difference, embracing failure, trusting his instincts, and living in the present. These principles made him the entrepreneur he was. Unfortunately, he passed away in 2011 from pancreatic cancer, despite his continuous struggles with the disease. His death would later be commemorated worldwide.
-</p>
-				</div>
-				<br>
-				<div class="apple">
-					<section>
-						<h2>Apple</h2>
-						<p>The Apple I (1976) was a breakthrough personal computer that had no monitor, keyboard, or mouse and sold for $666.66 created by Steve Jobs and Steve Wozniak. Becoming one of the first mass-produced, The Apple II (1977) improved upon it with additional features.In 1984 was introduced a revolutionary graphical interface and mouse, that came out with the Macintosh that promoted the development of personal computing.Jobs founded NeXT Corporation after leaving Apple in 1985, which was acquired later by Apple itself in 1996, and returned Jobs his role of  CEO in 1997.
 
-The Cube (2000) was a compact desktop computer that attracted attention for its design, but lacked key advantages. Then Apple made an amazing revolutionary product that changed music storage and playback The iPod (2001). The MacBook (2006) outsold competing laptops, while the iPhone (2007) introduced a versatile, palm-sized device. Later released, the iPad (tablet computer) packed laptop-like functionality into a thin and light design, this is considered  the culmination of Jobs's ideas because it embraced portable access to media, books and information, and embodying his profound influence on modern technology. 
-</p>
-					</section>
-					<aside>
-						<img src="./img/logoapp.jpg" >
-					</aside>
-				</div>
-				<br>
-				<div class="altro">
-				   <section>
-					   <h2>altri progetti</h2>
-					   <p>Jobs after looking for new opportunities acquired Pixar from Lucas-Filmand transformed it into an award-winning animated film studio. After a while in 2006 he sold Pixar to Disney for $7.4 billion becoming Disney's largest shareholder. 
-Under Jobs' leadership Pixar produced film that won more than 25 Academy Awards, and gained widespread recognition, such as "Toy Story," "Wall-E" and "Finding Dory,"
-</p>
-				   </section>
-				   <aside>
-						<img src="./img/pixar.jpg">
-				   </aside>
-				   
-				</div>
-			</main>
+		<div class="container">
+			<video autoplay loop muted plays-inline class="sfondo">
+				<source src="./img/sfondi/sfondo-jobs.mov" type="video/mp4">
+			</video>
+			
+			<div class="titolo">
+				<h1 >Steve Jobs</h1>
+			</div>
+
+			<nav>
+				<ul class="nav-bar">	
+					<input type='checkbox' id='check'>			
+					<span class="menu">
+						<li><a href="indexFaggin.html"><b>Faggin</b></a></li>
+						<li><a href="indexGiovanna.html"><b>Giovanna</b></a></li>
+						<li><a href="indexJobs.html"><b>Jobs</b></a></li>
+						<li><a href="indexKobe.html"><b>Kobe</b></a></li>
+						<li><a href="indexFibonacci.html"><b>Fibonacci</b></a></li>
+						<label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+					</span>
+					<label for="check" class="open-menu"><i class="fas fa-bars"></i></label>			
+					<li class="logo"><a href="index.html"><img src="logo.png" class="logo"></a></li>
+				</ul>
+			</nav>
+
+			<div class="introductio">
+				<img class="j" src="./img/jobs/10-Things-We-Can-Learn-From-the-Incredible-Steve-Jobs.jpg">
+				<p class="content">Steve Jobs, born in San Francisco, was one of the greatest entrepreneurs of all time. He founded Apple in April 1976, and by 1980, Apple went public, reaching a valuation of $256 million, thus creating the first Apple computers in history. Additionally, in 1986, he acquired Pixar Animation Studios, becoming the founder and CEO of the film production company. Jobs had a marketing idea based on several points: a focus on customer experience, simplicity and clarity, continuous innovation, creating emotional connections. These principles allowed him to win over customers and people, enabling him to sell his products. If Steve succeeded in reaching where he did, it was because he had an incredible mindset based on principles such as pursuing passion, always making a difference, embracing failure, trusting his instincts, and living in the present. These principles made him the entrepreneur he was. Unfortunately, he passed away in 2011 from pancreatic cancer, despite his continuous struggles with the disease. His death would later be commemorated worldwide.
+				</p>
+			</div>
+			
+			<div class="apple">
+				<section>
+					<h2>Apple</h2>
+					<p class="content">The Apple I (1976) was a breakthrough personal computer that had no monitor, keyboard, or mouse and sold for $666.66 created by Steve Jobs and Steve Wozniak. Becoming one of the first mass-produced, The Apple II (1977) improved upon it with additional features.In 1984 was introduced a revolutionary graphical interface and mouse, that came out with the Macintosh that promoted the development of personal computing.Jobs founded NeXT Corporation after leaving Apple in 1985, which was acquired later by Apple itself in 1996, and returned Jobs his role of  CEO in 1997.
+						The Cube (2000) was a compact desktop computer that attracted attention for its design, but lacked key advantages. Then Apple made an amazing revolutionary product that changed music storage and playback The iPod (2001). The MacBook (2006) outsold competing laptops, while the iPhone (2007) introduced a versatile, palm-sized device. Later released, the iPad (tablet computer) packed laptop-like functionality into a thin and light design, this is considered  the culmination of Jobs's ideas because it embraced portable access to media, books and information, and embodying his profound influence on modern technology. 
+					</p>
+				</section>
+				<aside>
+					<img class="j" src="./img/jobs/logoapp.jpg" >
+				</aside>
+			</div>
+
+			<div class="altro">
+				<section>
+					<h2>altri progetti</h2>
+					<p class="content">Jobs after looking for new opportunities acquired Pixar from Lucas-Filmand transformed it into an award-winning animated film studio. After a while in 2006 he sold Pixar to Disney for $7.4 billion becoming Disney's largest shareholder. 
+						Under Jobs' leadership Pixar produced film that won more than 25 Academy Awards, and gained widespread recognition, such as "Toy Story," "Wall-E" and "Finding Dory,"
+					</p>
+				</section>
+				<aside>
+					<img class="j" src="./img/jobs/pixar.jpg">
+				</aside>
+					
+			</div>
+
 			<footer>
-				
+				<b><p1>Copyright &copy;<script>document.write(new Date().getFullYear())</script> Designed by Nyabenda Valerio</p1></b>
 			</footer>
-
-	<!-- Code injected by live-server -->
-
-</body>
+		</div>
+	</body>
 </html>
